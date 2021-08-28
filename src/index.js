@@ -1,5 +1,4 @@
-// module.exports = 
-function check(str, bracketsConfig) {
+module.exports = function check(str, bracketsConfig) {
     let strArray = Array.from(str);
     let stack = [];
     const pairs = {
@@ -38,4 +37,3 @@ function check(str, bracketsConfig) {
 
 }
 
-check('([[[[(({{{}}}(([](((((((()))) ||||||))))[[{{| {{}}|}}[[[[]]]]{{{{{}}}}}]]))))]]]]))', [['(', ')'], ['[', ']'], ['{', '}'], ['|', '|']]);
